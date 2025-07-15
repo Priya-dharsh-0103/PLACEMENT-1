@@ -1,17 +1,13 @@
 def user_logic(n, arr):
     MOD = 10**9 + 7
 
-       original = [(val, idx) for idx, val in enumerate(arr)]
-
-    
+    original = [(val, idx) for idx, val in enumerate(arr)]
     sorted_arr = sorted(val for val in arr)
 
-  
     last_occurrence = {}
     for idx, val in enumerate(sorted_arr):
-        last_occurrence[val] = idx  # update each time to get the last index
+        last_occurrence[val] = idx  
 
-   
     total = 0
     for val, orig_idx in original:
         last_idx_sorted = last_occurrence[val]
@@ -20,7 +16,6 @@ def user_logic(n, arr):
 
     return total
 
-    pass
 
 def main():
     import sys
@@ -30,8 +25,9 @@ def main():
     n = int(data[0])  
     arr = list(map(int, data[1:]))  
     
-      result = user_logic(n, arr)
+    result = user_logic(n, arr)
     print(result)
 
-if _name_ == "_main_":
+
+if __name__ == "__main__":
     main()

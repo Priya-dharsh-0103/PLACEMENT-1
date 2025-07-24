@@ -1,0 +1,20 @@
+
+ar = [1, 2, 3, 4, 5]
+print("First element:", ar[0])
+print("Last element:", ar[-1])
+
+print("Sum of ar[2] and ar[3]:", ar[2] + ar[3])  
+
+
+middle = ar[len(ar)//2]
+print("Middle element:", middle)
+
+
+print("Minimum:", min(ar))
+print("Maximum:", max(ar))
+print("Sum:", sum(ar))
+
+
+print("Reversed array:", ar[::-1])
+
+print("Length:", len(ar))

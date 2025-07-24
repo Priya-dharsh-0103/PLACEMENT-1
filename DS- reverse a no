@@ -1,0 +1,16 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+num = 12345
+head = None
+for d in str(num):
+    node = Node(int(d))
+    node.next = head
+    head = node  
+temp = head
+while temp:
+    print(temp.data, end=" -> ")
+    temp = temp.next
+print("None")
